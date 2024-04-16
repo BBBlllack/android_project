@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/home1"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="首页" />
+    <item android:id="@+id/fenlei"
+        android:icon="@drawable/ic_baseline_apps_24"
+        android:title="分类" />
+    <item android:id="@+id/tuijian"
+        android:icon="@drawable/ic_baseline_add_circle_outline_24"
+        android:title="推荐" />
+    <item android:id="@+id/xiaoxi"
+        android:icon="@drawable/ic_baseline_email_24"
+        android:title="消息" />
+    <item android:id="@+id/my"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="我的" />
+</menu>

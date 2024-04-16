@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/zuo12"
+        android:title="首页" />
+    <item android:id="@+id/zuo22"
+        android:title="分类" />
+    <item android:id="@+id/zuo32"
+        android:title="推荐" />
+    <item android:id="@+id/zuo42"
+        android:title="消息" />
+    <item android:id="@+id/zuo52"
+        android:title="我的" />
+</menu>

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray">
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#E6E8EA">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/back3">
+
+            <TextView
+                android:id="@+id/tv_refresh1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:text="                                                 尊敬的用户，您好！欢迎使用本产品——科记前言 TechNote(一款为科学前沿技术论文爱好者量身打造的科技便利软件app)                               尊敬的用户，您好！欢迎使用本产品——科记前言 TechNote(一款为科学前沿技术论文爱好者量身打造的科技便利软件app)                               "
+                android:textSize="20dp"
+                android:textColor="#A60F43"
+                android:padding="10dp"/>
+
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/re1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_below="@id/view_pager"
+        android:layout_marginTop="40dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:text="快捷入口"
+        android:textSize="20dp"/>
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/re3"-->
+<!--        android:background="@color/white"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginTop="130dp"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:layout_below="@+id/view_pager"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/ib_learning_use"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:background="@color/white"-->
+<!--            android:layout_marginStart="15dp"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:src="@drawable/ic_baseline_favorite_border_24"/>-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/ib_electric_product"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:background="@color/white"-->
+
+<!--            android:layout_marginStart="110dp"-->
+
+<!--            android:scaleType="centerCrop"-->
+<!--            android:src="@drawable/ic_baseline_business_center_24" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/ib_daily_use"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:background="@color/white"-->
+
+<!--            android:layout_marginStart="205dp"-->
+
+<!--            android:scaleType="centerCrop"-->
+<!--            android:src="@drawable/ic_baseline_apps_24"/>-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/ib_sports_good"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginStart="310dp"-->
+<!--            android:background="@color/white"-->
+
+<!--            android:src="@drawable/ic_baseline_person_24"-->
+<!--            android:scaleType="centerCrop"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_learning_use"-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:text="我的收藏"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_below="@+id/ib_learning_use"-->
+<!--            android:layout_marginStart="15dp"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/tv_electric_product"-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:text="历史记录"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_below="@+id/ib_electric_product"-->
+<!--            android:layout_marginStart="110dp"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/tv_daily_use"-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:text="账号安全"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_below="@+id/ib_daily_use"-->
+<!--            android:layout_marginStart="205dp"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_sports_good"-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:layout_below="@+id/ib_sports_good"-->
+<!--            android:layout_marginStart="310dp"-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:text="修改信息"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textStyle="bold" />-->
+<!--    </RelativeLayout>-->
+
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/card"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:cardBackgroundColor="#ffffff"-->
+<!--        app:cardCornerRadius="10dp"-->
+<!--        app:cardElevation="10dp"-->
+<!--        app:cardPreventCornerOverlap="true"-->
+<!--        app:cardUseCompatPadding="false">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView1"-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            app:srcCompat="@drawable/ai" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginTop="120dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:text="美丽风景，美丽风景，美丽风景，美丽风景，美丽风景，美丽风景。"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="14sp" />-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:padding="16dp"
+        android:layout_below="@+id/textView3"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false">
+
+        <!-- Card 1 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:padding="8dp"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_baseline_favorite_border_24" />
+
+                <TextView
+                    android:id="@+id/tv_learning_use"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:text="我的收藏"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <!-- Your Card Content -->
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 2 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_baseline_business_center_24" />
+
+                <TextView
+                    android:id="@+id/tv_learning_use2"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_toRightOf="@+id/imageView2"
+                    android:text="历史记录"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 3 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_baseline_apps_24" />
+
+                <TextView
+                    android:id="@+id/tv_learning_use3"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_toRightOf="@+id/imageView3"
+                    android:text="账号安全"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 4 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_baseline_person_24" />
+
+                <TextView
+                    android:id="@+id/tv_learning_use4"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_toRightOf="@+id/imageView4"
+                    android:text="修改信息"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical"
+    tools:context=".fragment.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/skin_topbar_bg_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="分类"
+            android:textColor="@color/skin_text_white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            >
+
+            <RelativeLayout
+                android:id="@+id/mokuai1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_columnWeight="1">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ai"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img1"
+                    android:layout_centerInParent="true"
+                    android:text="人工智能"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_below="@id/name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:textSize="10dp"
+                    android:textColor="@color/black"
+                    android:text="计算机视觉|自然语言处理|人工智能|机器学习|机器人|语音"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mokuai9"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:id="@+id/mo9"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/jisuanji"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/mo99"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mo9"
+                    android:layout_centerInParent="true"
+                    android:text="计算机科学"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_below="@id/mo99"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:textSize="10dp"
+                    android:textColor="@color/black"
+                    android:text="OS|DB|编程语言|DS|信息学|逻辑学|图形学与人机交互|游戏|分布式..."/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mokuai4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:id="@+id/mo4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/math"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/mo44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mo4"
+                    android:layout_centerInParent="true"
+                    android:text="数学"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_below="@id/mo44"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:textSize="10dp"
+                    android:textColor="@color/black"
+                    android:text="数史|代数|拓扑|几何|分析|统计与概率|数论|逻辑|信息论|优化控制..."/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/mokuai5"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:id="@+id/mo5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/wuli"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/mo55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mo5"
+                    android:layout_centerInParent="true"
+                    android:text="物理学"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_below="@id/mo55"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:textSize="10dp"
+                    android:textColor="@color/black"
+                    android:text="相对论|量子宇宙|非线性科学|核物理|实验|天体|现象学|凝聚态..."/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mokuai8"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:id="@+id/mo8"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/dianqi"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/mo88"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mo8"
+                    android:layout_centerInParent="true"
+                    android:text="电气、系统科学"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_below="@id/mo88"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:textSize="10dp"
+                    android:textColor="@color/black"
+                    android:text="音频|语言处理|图像视频处理|信号处理|系统与控制"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mokuai2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:id="@+id/mo2"
+                    android:src="@drawable/tongji"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/mo22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mo2"
+                    android:layout_centerInParent="true"
+                    android:text="统计学"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_below="@id/mo22"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:textSize="10dp"
+                    android:textColor="@color/black"
+                    android:text="统计学"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mokuai3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:id="@+id/mo3"
+                    android:src="@drawable/jinrong"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/mo33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mo3"
+                    android:layout_centerInParent="true"
+                    android:text="量化金融"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_below="@id/mo33"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:textSize="10dp"
+                    android:textColor="@color/black"
+                    android:text="金融/量化/经济学"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mokuai7"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:id="@+id/mo7"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/jingji"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/mo77"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mo7"
+                    android:layout_centerInParent="true"
+                    android:text="经济学"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_below="@id/mo77"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:textSize="10dp"
+                    android:textColor="@color/black"
+                    android:text="经济学"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/mokuai6"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:id="@+id/mo6"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/shengwu"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/mo66"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mo6"
+                    android:layout_centerInParent="true"
+                    android:text="生物学"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_below="@id/mo66"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:textSize="10dp"
+                    android:textColor="@color/black"
+                    android:text="生物学"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/mokuai10"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:id="@+id/mo10"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/jiaoliuqu"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/mo100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mo10"
+                    android:layout_centerInParent="true"
+                    android:text="交流区"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_below="@id/mo100"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:textSize="10dp"
+                    android:textColor="@color/black"
+                    android:text="交流|灌水|咨询|工作|五花八门"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/collect"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:id="@+id/collect_img"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/shoucangjia"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/collect_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/collect_img"
+                    android:layout_centerInParent="true"
+                    android:text="我的收藏"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_below="@id/collect_text"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:textSize="10dp"
+                    android:textColor="@color/black"
+                    android:text="收藏论文"/>
+            </RelativeLayout>
+
+        </GridLayout>
+    </ScrollView>
+</LinearLayout>

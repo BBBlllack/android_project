@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray">
+
+    <ImageView
+        android:id="@+id/back22"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:background="@color/skin_topbar_bg_color"
+        android:src="@drawable/ic_baseline_keyboard_arrow_left_24" />
+
+    <TextView
+        android:id="@+id/loginemail_te1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:text="邮箱登录"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:background="@color/skin_topbar_bg_color"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@id/loginemail_te1"/>
+
+    <LinearLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="51dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="邮箱:"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/logintwo_email"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="8"
+            android:hint="请输入邮箱" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vi1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/re1"
+        android:layout_marginTop="4dp"
+        android:background="#C3C0C0" />
+
+    <LinearLayout
+        android:id="@+id/re2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/vi1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="验证码:"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/yz_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="5"
+            android:hint="请输入验证码" />
+
+        <Button
+            android:id="@+id/send_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="3"
+            android:text="获取验证码" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/logintwo"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back1"
+            android:text="点击登录"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
